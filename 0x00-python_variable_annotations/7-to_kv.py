@@ -11,4 +11,4 @@ def to_kv(k: str, v: Union[int, float]) -> Tuple[str, float]:
     Function that takes two arguments a string and a float/int and returns
     a Tuple
     """
-    return (k, pow(v ,2))
+    return (k, pow(v, 2))
