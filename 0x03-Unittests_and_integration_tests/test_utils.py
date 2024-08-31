@@ -23,3 +23,14 @@ class TestAccessNestedMap(unittest.TestCase):
             expected_result: Dict int
         """
         self.assertEqual(access_nested_map(nested_map, path), expected_result)
+
+    def test_access_nested_map_exception(self, nested_map, path, exception):
+        """
+        Function that test for exceptions on access_nested_map
+        Args:
+            nested_map: Dict containing the map
+            path: Tuple of the path to go through
+            exception: Exception name
+        """
+        with self.assertRaises(exception):
+            access_nested_map(nested_map, path)
